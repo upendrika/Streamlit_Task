@@ -59,7 +59,8 @@ def show_explore_page():
     
     # Display the first 10 rows of the dataset
     st.write("### Date set:")
-    st.dataframe(df.head(10))
+    st.write(data.head())
+    #st.dataframe(df.head(10))
     data = df["Country"].value_counts()
 
     fig1, ax1 = plt.subplots()
