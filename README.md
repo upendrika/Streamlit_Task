@@ -24,9 +24,8 @@ Education level,
 Years of professional coding experience
 
 # Requirements
-Python 3.x,
-Scikit-learn,
-Pandas,
-Streamlit,
-Matplotlib,
-Altair
+streamlit,
+numpy,
+pandas,
+matplotlib,
+scikit-learn
