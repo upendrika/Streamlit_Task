@@ -17,8 +17,33 @@ le_education = data["le_education"]
 #create stremlit app
 
 def show_predict_page():
+    st.markdown(
+            """
+            <style>
+            .video-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                background: #000;
+            }
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            </style>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
     
-    st.video("Software Developers Video.mp4")
+    #st.video("Software Developers Video.mp4")
     st.title("Software Developer Salary Prediction")
     
     st.sidebar.header(" We need some information to predict the salary")
