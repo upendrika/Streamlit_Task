@@ -54,7 +54,7 @@ df = load_data()
 
 def show_explore_page():
     st.title("Explore Software Engineer Salaries")
-    st.image('sof_salary.png', width=700)
+    st.image('sof_salary.jpg', width=700)
    
     
     # Display the first 10 rows of the dataset
