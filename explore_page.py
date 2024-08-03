@@ -55,11 +55,7 @@ df = load_data()
 def show_explore_page():
     st.title("Explore Software Engineer Salaries")
     st.image('sof_salary.png', width=700)
-    st.write(
-        """
-    #### Stack Overflow Developer Survey 2020
-    """
-    )
+   
     
     # Display the first 10 rows of the dataset
     st.write("### Date set:")
