@@ -18,7 +18,7 @@ le_education = data["le_education"]
 
 def show_predict_page():
    
-    st.video("Software Developers Video.mp4")
+    st.image('salary pre.png')
     st.title("Software Developer Salary Prediction")
     
     st.sidebar.header(" We need some information to predict the salary")
