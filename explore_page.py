@@ -58,7 +58,7 @@ def show_explore_page():
    
     
     # Display the first 10 rows of the dataset
-    st.write("### Date set:")
+    st.write("### Dataset :")
     st.dataframe(df.head(10))
     data = df["Country"].value_counts()
 
