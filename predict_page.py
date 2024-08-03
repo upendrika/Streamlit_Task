@@ -17,7 +17,8 @@ le_education = data["le_education"]
 #create stremlit app
 
 def show_predict_page():
-    st.image('salary pre.png', width=400)
+    
+    st.video("Software Developers Video.mp4")
     st.title("Software Developer Salary Prediction")
     
     st.sidebar.header(" We need some information to predict the salary")
