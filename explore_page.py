@@ -106,4 +106,20 @@ def show_explore_page():
     sns.heatmap(corr, annot=True, cmap='coolwarm', fmt='.2f', linewidths=0.5)
     st.pyplot(plt)
 
+    # Scatter plot of Years of Experience vs Salary
+    st.write("#### Scatter Plot of Years of Experience vs Salary")
+    plt.figure(figsize=(10, 10))
+    plt.title('Scatter Plot')
+    sns.set_style("darkgrid")
+    sns.scatterplot(x='YearsCodePro', y='Salary', data=df)
+    st.pyplot(plt)
+
+    # Boxplot of Salary by Education Level
+    st.write("#### Boxplot of Salary by Education Level")
+    plt.figure(figsize=(12, 8))
+    sns.set_style("darkgrid")
+    sns.boxplot(x='EdLevel', y='Salary', data=df)
+    plt.xticks(rotation=45)
+    st.pyplot(plt)
+
 
