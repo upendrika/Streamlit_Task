@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns 
 
 def shorten_categories(categories, cutoff):
     categorical_map = {}
@@ -93,4 +94,16 @@ def show_explore_page():
 
     data = df.groupby(["YearsCodePro"])["Salary"].mean().sort_values(ascending=True)
     st.line_chart(data)
+
+
+    # Correlation heatmap
+    st.write("#### Correlation Heatmap")
+    # Select only numeric columns for correlation matrix
+    numeric_df = df.select_dtypes(include=['float64', 'int64'])
+    corr = numeric_df.corr()
+    plt.figure(figsize=(10, 6))
+    sns.set_style('whitegrid')
+    sns.heatmap(corr, annot=True, cmap='coolwarm', fmt='.2f', linewidths=0.5)
+    st.pyplot(plt)
+
 
