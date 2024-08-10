@@ -23,6 +23,23 @@ Country,
 Education level,
 Years of professional coding experience
 
+# Installation
+To set up and run the application, you need the following Python packages:
+pip install streamlit numpy pandas matplotlib scikit-learn
+
+# Usage
+1. Clone the Repository:
+git clone https://github.com/yourusername/your-repository.git
+cd your-repository
+
+2. install Dependencies:
+pip install -r requirements.txt
+
+3. Run the Application:
+streamlit run app.py
+
+4. Interact with the App: Open your browser and navigate to http://localhost:8501 to use the application.
+
 # Requirements
 streamlit,
 numpy,
