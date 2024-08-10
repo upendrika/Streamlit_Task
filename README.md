@@ -25,6 +25,7 @@ Years of professional coding experience
 
 # Installation
 To set up and run the application, you need the following Python packages:
+
 pip install streamlit numpy pandas matplotlib scikit-learn
 
 # Usage
