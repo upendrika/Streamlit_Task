@@ -33,7 +33,7 @@ pip install streamlit numpy pandas matplotlib scikit-learn
 git clone https://github.com/yourusername/your-repository.git cd your-repository
 
 2. install Dependencies:
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 3. Run the Application:
 streamlit run app.py
